@@ -1,0 +1,18 @@
+aws_access_key_id = AKIA3HFAVGQDMFIITTUK
+aws_secret_access_key = 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
+
+sudo yum install -y perl-Switch perl-DateTime perl-Sys-Syslog perl-LWP-Protocol-https perl-Digest-SHA.x86_64
+
+curl https://aws-cloudwatch.s3.amazonaws.com/downloads/CloudWatchMonitoringScripts-1.2.2.zip -O
+
+cat ~/.aws/credentials
+
+ ./mon-put-instance-data.pl --mem-util --verify --verbose
+
+
+
+
+./mon-put-instance-data.pl --mem-used-incl-cache-buff -mem- util -mem-used --mem-avail
+
+
+ * * * * * ~/aws-scripts-mon/mon-put-instance-data.pl --mem-util --mem-used --mem-avail --disk-space-util --disk-space-used --disk-space-avail --disk-path=/ --from -corn
