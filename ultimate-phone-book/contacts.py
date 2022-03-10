@@ -1,15 +1,17 @@
 # code by @JymPatel
-# edited by @bupboi1337, (editors can put their name here && thanks for contribution :)
+# edited by @bupboi1337, (editors can put their name here && thanks for
+# contribution :)
 
 # this code uses GPL V3 LICENSE
-## check license it https://github.com/JymPatel/Python-FirstEdition/blob/Main/LICENSE
+# check license it
+# https://github.com/JymPatel/Python-FirstEdition/blob/Main/LICENSE
+import os
+import pickle
 print("this code uses GPL V3 LICENSE")
 print("")
 
 # start of code
 # import library
-import pickle
-import os
 
 # get array from pickle data
 infile = open('data/pickle-main', 'rb')
@@ -45,8 +47,8 @@ lname = 1
 number = 2
 email = 3
 # getting some variables
-promptvar = 0 # variable for prompt
-loopvar = 0 # variable for main loop
+promptvar = 0  # variable for prompt
+loopvar = 0  # variable for main loop
 # making loop to run
 while loopvar < 1:
     # ask user what to do
@@ -77,7 +79,8 @@ while loopvar < 1:
         i1 = 0
         # print all names
         while i1 < arraylen:
-            print(f"{array[fname][i1]} {array[lname][i1]},  {array[number][i1]}  {array[email][i1]}")
+            print(
+                f"{array[fname][i1]} {array[lname][i1]},  {array[number][i1]}  {array[email][i1]}")
             i1 += 1
         print("=======================")
 
@@ -122,11 +125,9 @@ while loopvar < 1:
                 print("there are more than one contact with same name")
                 # TODO
 
-
-
     # if option 4 is selected
     elif a == 4:
-        if keyacess == True:
+        if keyacess:
             sortcounter = 1
             while sortcounter != 0:
                 # reset counter
@@ -142,7 +143,8 @@ while loopvar < 1:
                         sortcounter += 1
                     if array[fname][i].upper() == array[fname][i + 1].upper():
                         # if first name are same, compare last
-                        if array[lname][i].upper() > array[lname][i + 1].upper():
+                        if array[lname][i].upper(
+                        ) > array[lname][i + 1].upper():
                             for j in range(4):
                                 temp = array[j][i]
                                 array[j][i] = array[j][i + 1]
@@ -158,7 +160,7 @@ while loopvar < 1:
     elif a == 9:
         if keyacess:
             # change prompt settings
-            if promptvar == 0: 
+            if promptvar == 0:
                 promptvar += 1
                 print("you won't get prompt now!")
                 print("ENTER 9 AGAIN TO START GETTING PROMPT AGAIN!!")
@@ -166,7 +168,6 @@ while loopvar < 1:
                 promptvar -= 1
         else:
             print("NEED CORRECT KEY TO ENABLE THIS FEATURE")
-
 
     # if option 0 is selected
     elif a == 0:

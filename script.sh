@@ -13,6 +13,6 @@ if [ -s file.txt ]
 then  rm file.txt
       git add .
       git commit -am "commit the changed.py file"
-      git push "https://venkatasai1497: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@github.com/venkatasai1497/sai.git"
+      git push "https://venkatasai1497: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@github.com/venkatasai1497/sai.git"
 else echo "no chabges done"
 fi
