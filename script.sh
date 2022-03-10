@@ -1,7 +1,7 @@
 #!/bin/bash
 find . -name '*.py' > file.txt
 cat file.txt
-whilr read -r line
+while read -r line
 do autopep8 --in-place --aggressive --aggressive "$line"
 done < file.txt
 
