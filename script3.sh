@@ -1,6 +1,6 @@
 #!/bin/bash
-cd script
 var=0
+cd sai
 find . -name '*.py' > file2
 while read -r line 
 do autopep8 --in-place --exit-code --aggressive --aggressive "$line"
