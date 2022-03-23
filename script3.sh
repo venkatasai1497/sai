@@ -1,4 +1,5 @@
 #!/bin/bash
+cd sai
 var=0
 find . -name '*.py' > file2
 while read -r line 
@@ -13,7 +14,7 @@ git status
 if  [ "$var" -eq 1 ]
 then  rm file2
 	git commit -m "autopep8 changes done"
-	git push "https://${GIT_USERNAME}:${GIT_PASSWORD}@github.com/${GIT_USERNAME}/gitchanges.git" HEAD:main
+	git push "https://${GIT_USERNAME}:${GIT_PASSWORD}@github.com/${GIT_USERNAME}/gitchanges.git" 
 else	rm file2
 	echo "no autopep8 changes"
 fi
