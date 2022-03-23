@@ -1,5 +1,5 @@
 #!/bin/bash
-cd sai
+cd script
 var=0
 find . -name '*.py' > file2
 while read -r line 
