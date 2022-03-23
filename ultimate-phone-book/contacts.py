@@ -20,6 +20,8 @@ array = pickle.load(infile)
 infile.close()
 
 # get key if path exists
+
+
 keyacess = False
 path = 'data/pickle-key'
 if os.path.isfile('data/pickle-key'):
