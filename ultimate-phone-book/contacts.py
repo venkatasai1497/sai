@@ -22,7 +22,9 @@ infile.close()
 # get key if path exists
 
 
-keyacess = False
+
+
+keyacess =   False
 path = 'data/pickle-key'
 if os.path.isfile('data/pickle-key'):
     pklekey = open('data/pickle-key', 'rb')
