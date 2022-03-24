@@ -1,6 +1,6 @@
 #!/bin/bash
 var=0
-cd sai
+cd mar24
 find . -name '*.py' > file2
 while read -r line 
 do autopep8 --in-place --exit-code --aggressive --aggressive "$line"
