@@ -1,6 +1,4 @@
 name: "Deploy header to aws"
-
-
 on:
   workflow_dispatch:
   push:
