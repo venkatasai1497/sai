@@ -2,7 +2,7 @@ name: Update Github
 on:
   push:
     branches:
-      - master
+    - master
     paths:
       - 'packages/auth/*.xml'
 
