@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - master
+      - terraform
     paths:
       - 'maven/12345/*.xml'
 
