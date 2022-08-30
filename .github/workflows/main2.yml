@@ -1,9 +1,9 @@
 name: Update Github
 on:
   push:
-  branches:
+  watch:
       - master
-  paths:
+  status:
       - 'packages/auth/*.xml'
 
 defaults:
