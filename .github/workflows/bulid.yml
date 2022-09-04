@@ -12,7 +12,7 @@ env:
   CI: true
   REGION: "us-east-1"
   SERVICE: "ISELLPro-front-end"
-  BUCKET: "isellpro-backend"
+  BUCKET: "terraformdemo1497"
   SERVICE_ID: "frontend-service"
   APP_VERSION: "ISELLPro-front-end-ver-${{ github.sha }}"
   DEPLOY_ARTIFACT: "frontend-service-artifacts-${{ github.sha }}"
