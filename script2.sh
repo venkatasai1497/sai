@@ -5,7 +5,7 @@ find . -name '*.py' > file.txt
 while read -r line
 do autopep8 --in-place --aggressive --aggressive "$line"
 done < file.txt
- #
+ ######
 git status | grep ".py$" > file.txt
 cat file.txt
 if [ -s file.txt ]
