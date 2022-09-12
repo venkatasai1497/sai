@@ -4,7 +4,7 @@ cat file.txt
 while read -r line
 do autopep8 --in-place --aggressive --aggressive "$line"
 done < file.txt
-
+#
 
 git add .
 git status | grep ".py$" > file.txt
