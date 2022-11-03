@@ -1,0 +1,47 @@
+name: "Notification"
+
+"on":
+  workflow_dispatch:
+
+  push:
+    branches:
+      - main
+     
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      # this is the new step using the ms-teams-notification action
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Create folder
+        run: |
+          mkdir test
+      - name: notify-microsoft-teams
+        uses: Ashok-venna/notify-microsoft-teams@v1.0.4
+      - name: Check out Actions repository
+
+        uses: actions/checkout@master
+
+        with:
+
+          repository: cg-dcx/github-actions
+
+          path: .github/actions/
+      - name: Check out Actions repository
+
+        uses: actions/checkout@master
+
+        with:
+
+          repository: cg-dcx/github-actions
+
+          path: .github/actions/
+           with:
+           
+          github-token: ${{ secrets.GIT_TOKEN }} # this will use the runner's token.
+          ms-teams-webhook-uri: ${{ secrets.MS_TEAMS_WEBHOOK_URI }}
+          notification-summary: build success
+          notification-color: 17a2b8
