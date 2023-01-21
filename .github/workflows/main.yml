@@ -1,6 +1,9 @@
-name: Lighthouse Check
-on: master
+name: Build & deploy
 
+on:
+  push:
+    branches:
+      - master
 jobs:
   lighthouse-check:
     runs-on: ubuntu-latest
